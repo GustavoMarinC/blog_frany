@@ -1,0 +1,21 @@
+app.controller('SportController',['$scope',function($scope){
+$scope.ubicacion='#!/sport';
+$scope.arregloFotos=[
+    {
+        url:'img/sport/imgfrany401.jpg'
+    },
+    {
+        url:'img/sport/imgfrany402.jpg'
+    },
+    {
+        url:'img/sport/imgfrany403.jpg'
+    },
+    {
+        url:'img/sport/imgfrany404.jpg'
+    },
+    {
+        url:'img/sport/imgfrany406.jpg'
+    }
+];
+
+}]);
