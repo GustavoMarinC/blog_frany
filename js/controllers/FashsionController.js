@@ -2,12 +2,11 @@ app.controller('FashionController',['ngDialog','$scope','peticionesFactory',asyn
     $scope.ubicacion='#!/fashion';
     $scope.fotoSelecionada;
     $scope.fotoSelecionadaIndex;
-    var fotos = peticionesFactory.obtenerFotos('fashion');
-    console.log(fotos);
-   // $scope.arregloFotos=randomizarArray(fotos);
-    $scope.arregloFotos =  await fotos; 
-    console.log('arreglofotos',$scope.arregloFotos);
-    
+
+    let fotos = await peticionesFactory.obtenerFotos('fashion');
+    $scope.arregloFotos = fotos;
+    $scope.$digest();    
+
     $scope.abrirImgen = function(index){
         console.log(index);
         $scope.fotoSelecionada = $scope.arregloFotos[index];
