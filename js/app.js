@@ -24,6 +24,10 @@ app.config(['$routeProvider',function($routeProvider){
         templateUrl:'views/lingeiri.html'
     }).when('/nuArtistique',{
         templateUrl:'views/nuArtistique.html'
+    }).when('/videos',{
+        templateUrl: 'views/videos.html'
+    }).when('/contacto',{
+        templateUrl: 'views/contacto.html'
     })
 }]);
 app.controller('CarouselController',CarouselController);

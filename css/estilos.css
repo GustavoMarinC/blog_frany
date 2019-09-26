@@ -9,4 +9,7 @@
 	height: 100%;
 }
 
-
+.transBackground{
+	background-color: blueviolet;
+	opacity: 0.5;
+}
