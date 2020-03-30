@@ -1,0 +1,16 @@
+<div ng-controller = 'ContactameController' class="container">
+<form name = 'formSendEmail' id='formSendEmail' novalidate>
+        <div class="form-group">
+            <input type="email" placeholder="Email*" class="form-control" ng-model = 'correo' required>
+            <span ng-show='!correo && formSendEmail.$submitted' class="alert alert-danger">Debe colocar una direccion de correo valido</span>
+            <input type="text" placeholder="Prenom*" class="form-control" ng-model = 'nombre' required>
+            <span ng-show = '!nombre && formSendEmail.$submitted' class="alert alert-danger">Debe colocar un nombre</span>
+            <input type="text" placeholder="Sujet*" class="form-control" ng-model = 'asunto' required>
+            <span ng-show="!asunto && formSendEmail.$submitted" class="alert alert-danger" >Debe colocar un asunto</span>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message*" ng-model = 'mensaje' required></textarea>
+            <span ng-show="!mensaje && formSendEmail.$submitted" class="alert alert-danger">Debe colocar un mensaje</span>
+            <button type="submit" class="form-control btn btn-dark" ng-click = 'sendEmail()'>Envoyer</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,20 @@
+.fill-bg {
+    background-image: url('mi-url');
+    background-size : 'cover';
+    background-repeat : 'no-repeat';
+    background-position : 'center center';
+  }
+
+  div.wide {
+    width: 400px;
+    height: 300px;
+    border: 1px solid orange;
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 120px;
+    vertical-align: top;
+}
