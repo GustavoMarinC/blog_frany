@@ -1,13 +1,17 @@
 app.controller('PhotosController',['ngDialog','$scope','peticionesFactory',async function(ngDialog,$scope,peticionesFactory){
     $scope.ubicacion = '!#/lingerie'
     $scope.arregloFotos=[];
+    /*
     let fotosSport = await peticionesFactory.obtenerFotos('sport');
     let fotoslingerie = await peticionesFactory.obtenerFotos('lingerie');
     let nu_artistique = await peticionesFactory.obtenerFotos('nu_artistique');
     let fotosFashion = await peticionesFactory.obtenerFotos('fashion');
 
     $scope.arregloFotos = fotosSport.concat(fotoslingerie,nu_artistique,fotosFashion);
- 
+ */
+
+let photos = await peticionesFactory.obtenerFotos('photos');
+$scope.arregloFotos = photos;
     $scope.$digest();  
 
 
