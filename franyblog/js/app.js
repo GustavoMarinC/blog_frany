@@ -30,6 +30,12 @@ app.config(['$routeProvider',function($routeProvider){
         templateUrl: 'views/contacto.html'
     }).when('/livre',{
         'templateUrl':'views/livedors.html',
+    }).when('/loginChamare',{
+        'templateUrl':'views/loginChamare.html',
+    }).when('/fetiches',{
+        'templateUrl':'views/fetiches.html',
+    }).when('/portrait',{
+        'templateUrl':'views/portrait.html',
     })
 }]);
 app.controller('CarouselController',CarouselController);
