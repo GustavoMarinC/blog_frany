@@ -597,3 +597,14 @@ html {
 	width:60%;
   }
   
+  .fill-bg {
+	background-image: url('mi-url');
+	background-size : 'cover';
+	background-repeat : 'no-repeat';
+	background-position : 'center center';
+  }
+
+  div.wide {
+    width: 800;
+    height: 600;
+}

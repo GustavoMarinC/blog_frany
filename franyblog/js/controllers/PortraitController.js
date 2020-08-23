@@ -1,5 +1,5 @@
 app.controller('PortraitController',['ngDialog','$scope','peticionesFactory',async (ngDialog,$scope, peticionesFactory)=>{
-    $scope.ubicacion='#!/Portrait';
+    $scope.ubicacion='#!/portrait';
     $scope.fotoSelecionada;
     $scope.fotoSelecionadaIndex;
 
