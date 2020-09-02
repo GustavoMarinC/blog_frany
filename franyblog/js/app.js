@@ -36,6 +36,8 @@ app.config(['$routeProvider',function($routeProvider){
         'templateUrl':'views/fetiches.html',
     }).when('/portrait',{
         'templateUrl':'views/portrait.html',
+    }).when('/photosCharme',{
+        'templateUrl':'views/photosCharme.html',
     })
 }]);
 app.controller('CarouselController',CarouselController);

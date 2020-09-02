@@ -606,3 +606,11 @@ html {
 	display: inline-block;
 
 }
+
+.fondo-negro {
+	background-color: black;
+}
+
+.letras-blancas {
+	color: white;
+}
