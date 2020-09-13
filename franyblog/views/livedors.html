@@ -1,29 +1,46 @@
-<div ng-controller='LivreController' class="container">
+<div ng-controller='LivreController' class="fondo-negro">
     <button ng-click="formularioComentar()" class="btn btn-info">Dejar comentario</button>
    
       <form>
-        <div class="form-group">
-          <label>Titulo</label>
-          <input type="text" class="form-control"  ng-model='titulo'>
+        <div class="container">
+          <div class="form-group row">
+            <div class="col-4">
+              <label class="letras-blancas">Titulo</label>
+            </div>
+            <div class="col-8">
+              <input type="text" class="form-control"  ng-model='titulo'>
+            </div>    
+          </div>
+          <div class="form-group row">
+            <div class="col-4">
+              <label  class="letras-blancas">Usuario</label>
+            </div>
+            <div class="col-8">
+              <input  type="text" class="form-control" ng-model='usuario'>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-4">
+              <label class="letras-blancas">Comentario</label>
+            </div>
+            <div class="col-8">
+              <input type="text" class="form-control" ng-model='comentarioNuevo'>
+            </div> 
+          </div>
+          <button type="submit" class="btn btn-primary" ng-click="addComentario()">Comentar</button>
         </div>
-        <div class="form-group">
-          <label >Usuario</label>
-          <input  type="text" class="form-control" ng-model='usuario'>
-        </div>
-        <div class="form-group">
-          <label>Comentario</label>
-          <input type="text" class="form-control" ng-model='comentarioNuevo'>
-        </div>
-        <button type="submit" class="btn btn-primary" ng-click="addComentario()" class="fondo">Comentar</button>
+       
       </form>
       
-    
-    <div ng-repeat='comentario in comentario'>
-        <div class="card">
+      <div class="container" ng-repeat='comentario in comentario'>
+        <br>
+        <div class="row">
+          <div class="card col-12">
             <div class="card-body">
               <h5 class="card-title">{{comentario.titulo}}</h5>
               <p class="card-text">{{comentario.comentario}}</p>
             </div>
           </div>
+        </div> 
     </div>
 </div>
